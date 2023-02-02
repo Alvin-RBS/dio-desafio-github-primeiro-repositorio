@@ -1,0 +1,88 @@
+# Git 
+
+ (*) Objetos internos do Git 
+
+
+•	SHA1 => codificador de informações contidas nos arquivos. Para cada informação inserida (Ex: “A Rússia é o maior país do mundo”) o SHA1 cria um código de 40 caracteres que identificam essa informação (como uma digital). Logo, qualquer mudança no texto faz gerar um novo código, o que confere segurança na informação.
+
+
+•	Blob (Bolha) => Serve para armazenar esse arquivo, contendo: tamanho e conteúdo.
+
+
+•	Tree (árvore) => servem para armazenar bolhas e identificar seus metadados.
+
+
+•	Commit => Armazenam árvores, contém a data de criação do arquivo e outras informações básicas sobre eles.
+
+
+*Obs: Alterando-se o SHA de um desses elementos os outros também são alterados. Nessa perspectiva, é fácil notar uma mudança no código, conferindo segurança, assim, ao sistema git.
+
+
+•	Comando para copiar => Ctrl + Shift + C
+
+
+•	P/ colar => Shift + insert
+
+
+•	P/ limpar o terminal sem sair da pasta => Ctrl + L
+
+
+•	P/ criar uma past@ dentro da pastA => mkdir + (nome da past@)
+
+
+•	P/ ver arquivos ocultos => ls -a
+
+
+•	Voltar 1 nível no código => cd ..
+
+Criando um commit => digite (git add *) e aperte Enter
+
+Depois, digite (git commit -m “nome do commit”) e aperte Enter
+
+
+Ex:
+
+------------------------------------------------------------------
+
+mjose@LAPTOP-A0P4M4RM MINGW64 /c/workspace/livro-receitas (master)
+$ git add *
+
+mjose@LAPTOP-A0P4M4RM MINGW64 /c/workspace/livro-receitas (master)
+$ git commit -m "commit inicial"
+
+------------------------------------------------------------------
+
+
+•	Git Init => é usado para inicializar um diretório dentro de uma pasta. Para usar é só escrever(git init) dentro da pasta, onde se deseja criar o repositório.
+
+*Obs: Repositório é um lugar onde se guarda arquivos.
+
+
+*Diretório = pasta
+
+
+•	Repositório Local => todos os arquivos que estão neste devem estar commitados para serem enviados para o repositório remoto (servidor).
+
+
+•	Git status => apresenta o estado dos arquivos (se está Unmodified, Untracked...).
+
+
+•	Mover um arquivo de uma pasta para a outra => entrar na pasta onde está o file desejado e escrever (mv “nome do arquivo” ./”nome da nova pasta que guardará o arquivo”/
+
+
+•	Adicionar os arquivos/pastas novos na área de stage => digito (git add “nome do arquivo” {se for o caso} “nome da pasta”
+
+
+•	Como criar um arquivo =>  dentro da pasta digitar (echo > “nome do file”)
+
+
+•	Ver configuração no git => digite em uma pasta (git config --list)
+
+
+•	Mover um arquivo do repositório local para o repositório remoto => dentro da pasta escrever (git push “nome da URL” master)
+
+
+•	Para adicionar uma URL do repositório remoto no repositório local com um nome => (git remote add “apelido do repositório remoto” URL do repositório remoto)
+
+
+•	Para entregar desafio de projeto no GitHub =>  (https://github.com/user.name/nome-do-repositório). Após isso, escrever a descrição.
